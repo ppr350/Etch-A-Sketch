@@ -1,24 +1,28 @@
 /*--------container--------*/
+
 #container {
     background-color: rgba(49, 10, 133, 0.836);
     display: grid;
     height: 1000px;
     width: 1000px;
-    grid-gap: 3px;
-    grid-template-rows: repeat(16, 1fr);
-    grid-template-columns: repeat(16, 1fr);
+    grid-gap: 1px;
+    /*grid-template-rows: repeat(16, 1fr);
+    grid-template-columns: repeat(16, 1fr);*/
     padding: 10px;
 }
 
-/*-----vertical grid-------*/
-.makeGrids {
+/*----------grid----------*/
+
+.grid {
     background-color: grey;
 }
 
-.makeGrids:hover {
+.grid:hover {
     background-color: rgb(159, 158, 158);
     cursor: pointer;
 }
+
+/*---------button--------*/
 
 #get-custom-grid-numbers {
     font-size: 25px;
