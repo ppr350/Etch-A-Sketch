@@ -12,7 +12,11 @@ function createDefaultGrid(gridNum) {
         document.getElementById("container").appendChild(grid);
         container.style.gridTemplateRows = `repeat(${gridNum}, 1fr)`
         container.style.gridTemplateColumns = `repeat(${gridNum}, 1fr)`
-        console.log("make default grids successfully.")
+        console.log("make default grids successfully.");
+        grid.addEventListener("mouseover", () => {
+            grid.style.backgroundColor = "black";
+            console.log("drawing function set up successfully")
+        })
     }
 }
 createDefaultGrid(16)
@@ -68,10 +72,24 @@ function setUserDefineGrid() {
         grid.className = "grid";
         document.getElementById("container").appendChild(grid);
         console.log(userGridNum)
+        grid.addEventListener("mouseover", () => {
+            grid.style.backgroundColor = "black";
+        })
     }
     console.log("user grids set out successfully.")
+    console.log("drawing function set up successfully")
+
 }
 
-/*-------------make a mouse down function-------------*/
+/*-------------make a mouse over function-------------*/
+
+/*const grid = document.querySelector(".grid")
+
+const containerDraw = document.getElementById("container");
+containerDraw.addEventListener("onmouseover", (event) => {
+    console.log("it's here")
+})*/
+
+
 
 
