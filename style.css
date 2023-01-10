@@ -3,57 +3,73 @@ html, body {
 }
 
 body {
-    background-color: rgb(250, 250, 217);
+    background-color: rgb(0, 0, 0);
 }
 
 /*--------container--------*/
 
 #container {
-    background-color: rgba(49, 10, 133, 0.836);
+    background-color: aqua;
+    border-style: double;
     display: grid;
     height: 1000px;
     width: 1000px;
     grid-gap: 1px;
-    /*grid-template-rows: repeat(16, 1fr);
-    grid-template-columns: repeat(16, 1fr);*/
-    padding: 10px;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
 }
 
 /*----------grid----------*/
 
+#title {
+    color:blue;
+    font-size: 70px;
+    -webkit-text-stroke: 1.5px white;
+}
+
+#title,
+#get-custom-grid-numbers,
+#container {
+text-align: center;
+position: relative;
+left: 50%;
+transform: translateX(-50%);
+}
+
 .grid {
-    background-color: grey;
+    background: blue;
 }
 
 .grid:hover {
-    background-color: rgb(159, 158, 158);
+    background:;
     cursor: pointer;
 }
 
 /*---------button--------*/
 
 #get-custom-grid-numbers {
-    font-size: 25px;
+    font-size: 40px;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     color: rgb(255, 105, 253);
     padding: 5px;
     background-color: rgb(18, 18, 18);
     border-radius: 10px;
-    border: 4px solid rgba(111, 71, 198, 0.836);
-    margin: 10px;
+    border: 4px solid blue;
+    margin-bottom: 10px;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
+    -webkit-text-stroke: 1px white;
+    text-align: center;
     
 }
 
 #get-custom-grid-numbers:hover {
-    color: rgba(111, 71, 198, 0.836);
+    color: blue;
     cursor: pointer;
     border: 4px solid rgb(255, 105, 253);
     transition: 0.5s;
+}
+
+.color {
+    background: rgba{0,0,0,0.1};
 }

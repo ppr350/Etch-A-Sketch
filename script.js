@@ -8,14 +8,18 @@ document.body.appendChild(container);
 function createDefaultGrid(gridNum) {
     for (let x = 0; x < (gridNum * gridNum); x++) {
         const grid = document.createElement("div");
+        grid.textContent = "  ";
         grid.className = "grid";
+        grid.id = "grid";
         document.getElementById("container").appendChild(grid);
         container.style.gridTemplateRows = `repeat(${gridNum}, 1fr)`
         container.style.gridTemplateColumns = `repeat(${gridNum}, 1fr)`
         console.log("make default grids successfully.");
-        grid.addEventListener("mouseover", () => {
-            grid.style.backgroundColor = "black";
-            console.log("drawing function set up successfully")
+        grid.addEventListener("mouseover", function(event) {
+            /*grid.style.backgroundColor = "black";
+            console.log("drawing function set up successfully")*/
+            this.style.backgroundColor = "black";
+            //this.style.opacity += (parseFloat(this.style.opacity) || 0) + 0.2;
         })
     }
 }
