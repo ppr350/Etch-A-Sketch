@@ -10,7 +10,7 @@ body {
 /*--------container--------*/
 
 #container {
-    background-color: aqua;
+    background-color: white;
     border-style: double;
     display: grid;
     height: 600px;
@@ -97,5 +97,10 @@ footer {
 
     footer {
         font-size: 15px;
+    }
+
+    #container {
+        height: 400px;
+        width: 400px;
     }
 }
